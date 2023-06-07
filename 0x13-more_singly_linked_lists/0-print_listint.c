@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -5,10 +7,11 @@
  * @h: linked list of type listint_t to print
  * Return: number of nodes
  */
+
 size_t print_listint(const listint_t *h)
 {
 	/* Initialize a counter to keeep track of the number of nodes */
-	size_t num = 0;
+	size_t total = 0;
 
 	while (h) /* It continues as long as h != NULL */
 	{
@@ -17,6 +20,5 @@ size_t print_listint(const listint_t *h)
 		total++;
 		h = h->next;
 	}
-
 	return (total); /* Returns the number of nodes printed */
 }
