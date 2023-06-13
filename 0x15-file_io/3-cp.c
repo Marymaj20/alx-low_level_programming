@@ -45,7 +45,7 @@ void close_file(int file_des)
 }
 
 /**
- * main – Entry point.
+ * main – Copies the contents of a file to another file.
  * @argc: The number of arguments provided to the program.
  * @argv: An array of pointers to the arguments.
  * Return: 0 on success.
